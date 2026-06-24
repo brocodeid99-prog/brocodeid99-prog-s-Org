@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  /* Custom color variables made dynamic via CSS properties */
+  --color-desa-hijau: var(--desa-hijau);      /* Warna Utama */
+  --color-desa-hijau-light: var(--desa-hijau-light);/* Warna Utama Sedang */
+  --color-desa-hijau-soft: var(--desa-hijau-soft); /* Warna Utama Sangat Lembut (bg) */
+  --color-desa-putih: #ffffff;      /* Putih */
+  --color-desa-emas: var(--desa-emas);       /* Warna Aksen */
+  --color-desa-emas-dark: var(--desa-emas-dark);  /* Warna Aksen Gelap */
+  --color-desa-navy: var(--desa-navy);       /* Biru Dongker / Slate sangat gelap */
+  --color-desa-navy-light: var(--desa-navy-light); /* Biru Dongker Sedang */
+  --color-desa-abu: var(--desa-abu);        /* Abu-abu Terang */
+}
+
+:root {
+  /* Default: Hijau Alam */
+  --desa-hijau: #14532d;
+  --desa-hijau-light: #166534;
+  --desa-hijau-soft: #f0fdf4;
+  --desa-emas: #fbbf24;
+  --desa-emas-dark: #b45309;
+  --desa-navy: #0f172a;
+  --desa-navy-light: #1e293b;
+  --desa-abu: #f8fafc;
+}
+
+/* Samudra Biru */
+.palette-biru {
+  --desa-hijau: #1e3a8a;
+  --desa-hijau-light: #2563eb;
+  --desa-hijau-soft: #eff6ff;
+  --desa-emas: #06b6d4;
+  --desa-emas-dark: #0891b2;
+  --desa-navy: #0f172a;
+  --desa-navy-light: #1e293b;
+  --desa-abu: #f1f5f9;
+}
+
+/* Merah Perjuangan */
+.palette-merah {
+  --desa-hijau: #7f1d1d;
+  --desa-hijau-light: #dc2626;
+  --desa-hijau-soft: #fef2f2;
+  --desa-emas: #f59e0b;
+  --desa-emas-dark: #b45309;
+  --desa-navy: #180202;
+  --desa-navy-light: #2c0e0e;
+  --desa-abu: #fffbeb;
+}
+
+/* Teal Harmoni */
+.palette-teal {
+  --desa-hijau: #115e59;
+  --desa-hijau-light: #0d9488;
+  --desa-hijau-soft: #f0fdfa;
+  --desa-emas: #f43f5e;
+  --desa-emas-dark: #be123c;
+  --desa-navy: #022c22;
+  --desa-navy-light: #064e3b;
+  --desa-abu: #f4fbf7;
+}
+
+/* Base style resets */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-desa-abu);
+  color: var(--color-desa-navy-light);
+}
+
+/* Custom scrollbar for beautiful desktop browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom animations and styling blocks */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(20, 83, 45, 0.96) 0%, rgba(15, 23, 42, 0.98) 100%);
+}
+
+.card-hover-effect {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px -8px rgba(20, 83, 45, 0.15);
+}
+
+/* Leaf ornament motif used for headers */
+.motif-bg {
+  background-image: radial-gradient(circle at 1px 1px, #e2e8f0 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Printing styling for official receipts/documents if simulated */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

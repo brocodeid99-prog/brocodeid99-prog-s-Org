@@ -1,0 +1,6 @@
+{
+  "name": "Website Resmi Desa Tinggarjaya",
+  "description": "Website profil resmi Desa Tinggarjaya, Kecamatan Sidareja, Kabupaten Cilacap, Jawa Tengah. Pusat informasi, pelayanan mandiri, transparansi anggaran, dan potensi desa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

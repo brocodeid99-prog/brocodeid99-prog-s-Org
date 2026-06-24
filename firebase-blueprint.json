@@ -1,0 +1,114 @@
+{
+  "collections": {
+    "configs": {
+      "description": "General configurations and single-object settings of the village.",
+      "fields": {
+        "id": { "type": "string" }
+      },
+      "rules": {
+        "allow": "read, write"
+      }
+    },
+    "perangkatDesa": {
+      "description": "Perangkat Desa members list",
+      "fields": {
+        "id": { "type": "string" },
+        "nama": { "type": "string" },
+        "jabatan": { "type": "string" },
+        "foto": { "type": "string" },
+        "deskripsi": { "type": "string" },
+        "nip": { "type": "string" }
+      },
+      "rules": {
+        "allow": "read, write"
+      }
+    },
+    "layananDesa": {
+      "description": "Layanan Desa items list",
+      "fields": {
+        "id": { "type": "string" },
+        "nama": { "type": "string" },
+        "deskripsi": { "type": "string" },
+        "persyaratan": { "type": "array" },
+        "kategori": { "type": "string" },
+        "estimasiWaktu": { "type": "string" }
+      },
+      "rules": {
+        "allow": "read, write"
+      }
+    },
+    "beritaDesa": {
+      "description": "Berita Desa articles",
+      "fields": {
+        "id": { "type": "string" },
+        "judul": { "type": "string" },
+        "slug": { "type": "string" },
+        "kategori": { "type": "string" },
+        "tanggal": { "type": "string" },
+        "ringkasan": { "type": "string" },
+        "konten": { "type": "string" },
+        "gambar": { "type": "string" },
+        "penulis": { "type": "string" },
+        "dibaca": { "type": "string" }
+      },
+      "rules": {
+        "allow": "read, write"
+      }
+    },
+    "pengumumanDesa": {
+      "description": "Pengumuman Desa bulletins",
+      "fields": {
+        "id": { "type": "string" },
+        "judul": { "type": "string" },
+        "tanggal": { "type": "string" },
+        "konten": { "type": "string" },
+        "kategori": { "type": "string" },
+        "oleh": { "type": "string" }
+      },
+      "rules": {
+        "allow": "read, write"
+      }
+    },
+    "agendaKegiatan": {
+      "description": "Agenda Kegiatan events",
+      "fields": {
+        "id": { "type": "string" },
+        "nama": { "type": "string" },
+        "tanggal": { "type": "string" },
+        "waktu": { "type": "string" },
+        "lokasi": { "type": "string" },
+        "keterangan": { "type": "string" },
+        "penyelenggara": { "type": "string" }
+      },
+      "rules": {
+        "allow": "read, write"
+      }
+    },
+    "potensiDesa": {
+      "description": "Potensi Desa elements",
+      "fields": {
+        "id": { "type": "string" },
+        "judul": { "type": "string" },
+        "deskripsi": { "type": "string" },
+        "gambar": { "type": "string" },
+        "kategori": { "type": "string" }
+      },
+      "rules": {
+        "allow": "read, write"
+      }
+    },
+    "galeriDesa": {
+      "description": "Galeri Foto items",
+      "fields": {
+        "id": { "type": "string" },
+        "judul": { "type": "string" },
+        "kategori": { "type": "string" },
+        "url": { "type": "string" },
+        "deskripsi": { "type": "string" }
+      },
+      "rules": {
+        "allow": "read, write"
+      }
+    }
+  }
+}
